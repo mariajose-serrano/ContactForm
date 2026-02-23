@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Maria José Serrano</title>
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+  body {
+    background-color: #eba85b; /* Beige clásico */
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Botón Portfolio -->
+  <a href="https://github.com/mariajose-serrano/my-portfolio-adalab-maria-jose-serrano-higueras" 
+     class="button is-dark" 
+     style="position:fixed; top:15px; left:15px; z-index:999;">
+    Portfolio
+  </a>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+        <!-- FOTO -->
+        <div class="column is-half has-text-centered">
+          <figure class="image is-256x256 is-inline-block">
+            <img class="is-rounded" src="./images/gagalga.jpg" alt="Maria José Serrano">
+          </figure>
+          <p class="mt-3 has-text-black">
+            Maria José Serrano · Full Stack Web Developer
+          </p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="column is-half">
+          <div class="box">
+
+            <h1 class="title is-4">Contact Form</h1>
+
+            <form action="https://formspree.io/f/xwvnwrwy" method="POST">
+
+              <div class="field">
+                <label class="label">Name / Company name</label>
+                <div class="control">
+                  <input class="input" type="text" name="nombre" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" name="email" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Phone</label>
+                <div class="control">
+                  <input class="input" type="tel" name="phone" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" name="mensaje"
+                    placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+
+              <!-- Redirección a página de gracias -->
+              <input type="hidden" name="_redirect" value="thanks.html">
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
+
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary is-fullwidth" type="submit">
+                    Send
+                  </button>
+                </div>
+              </div>
+
+            </form>
+
+            <hr>
+
+            <!-- ICONOS DE CONTACTO -->
+            <div class="buttons is-centered mt-4">
+
+              <a href="mailto:mariajose-serrano@hotmail.com" class="button is-light">
+                <span class="icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </a>
+
+              <a href="https://github.com/mariajose-serrano" target="_blank" class="button is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+
+              <a href="tel:+34610614297" class="button is-success">
+                <span class="icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
